@@ -1,149 +1,252 @@
-body {
+* {
     margin: 0;
-    margin-left: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.um,
-.dois,
-.tres,
-.quatro,
-.cinco {
-    position: fixed;
-    left: 0;
-    width: 20px;
-    height: 20%;
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.clique {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.2s;
-}
-
-.clique:hover {
-    width: 15px;
-    height: 15px;
-    transition: 0.2s;
-}
-
-.dentrodoclique {
-    width: 6px;
-    height: 6px;
-    border-radius: 100%;
-    background-color: black;
-}
-
-.um {
-    top: 0;
-    background-color: rgb(225, 0, 0);
-    transition: 0.2s;
-}
-
-.um:hover {
-    background-color: rgb(250, 0, 0);
-    transition: 0.2s;
-}
-
-.dois {
-    top: 20%;
-    background-color: rgb(175, 0, 0);
-    transition: 0.2s;
-}
-
-.dois:hover {
-    background-color: rgb(200, 0, 0);
-    transition: 0.2s;
-}
-
-.tres {
-    top: 40%;
-    background-color: rgb(125, 0, 0);
-    transition: 0.2s;
-}
-
-.tres:hover {
-    background-color: rgb(150, 0, 0);
-    transition: 0.2s;
-}
-
-.quatro {
-    top: 60%;
-    background-color: rgb(75, 0, 0);
-    transition: 0.2s;
-}
-
-.quatro:hover {
-    background-color: rgb(100, 0, 0);
-    transition: 0.2s;
-}
-
-.cinco {
-    top: 80%;
-    background-color: rgb(25, 0, 0);
-    transition: 0.2s;
-}
-
-.cinco:hover {
-    background-color: rgb(50, 0, 0);
-    transition: 0.2s;
-}
-
-.tamanho {
-    height: 650px;
-    padding: 25px;
-}
-
-.tamanhocontato {
-    height: 500px;
-    padding: 25px;
-}
-
-.titulo,
-.projetos,
-.contato {
-    background-color: black;
-    color: white;
-}
-
-.centro {
+.banner .content {
+    position: relative;
+    max-width: 750px;
     text-align: center;
 }
 
-.titulo {
+.banner .content h2 {
+    color: #fff;
+    margin: 100px 0;
+    font-size: 60px;
+}
+
+.banner .content p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.banner header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.banner header img {
+    max-height: 35px;
+}
+
+.banner header .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.banner header .together {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner header .together img {
+    margin-right: 35px;
+}
+
+.banner header .toggle {
+    margin: 10px;
     position: relative;
+    width: 36px;
+    height: 27px;
+    background: url(toggle.png);
+    background-size: cover;
+    cursor: pointer;
 }
 
-.victor {
-    margin: 50px;
+.certificados,
+.projetos,
+.habilidades,
+.contato {
+    position: relative;
+    width: 100%;
+    display: flex;
 }
 
-.redes {
-    display: inline-block;
-    height: 30px;
-    width: 30px;
+.certificados .contentBx {
+    background: white;
+    padding: 100px;
+    width: 50%;
+    text-align: justify;
+}
+
+.certificados .imgBx, .projetos .imgBx {
+    width: 50%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.certificados .imgBx img, .projetos .imgBx img {
+    width: 49%;
+    border: 1px solid grey;
+}
+
+.projetos .contentBx {
+    background: black;
+    padding: 100px;
+    width: 50%;
+    text-align: justify;
+}
+
+.projetos .imgBx {
+    background: black;
+}
+
+.habilidades .contentBx1,
+.habilidades .contentBx2 {
+    background: white;
+    padding: 100px;
+    width: 50%;
+    text-align: justify;
+}
+
+.habilidades .contentBx2 .heading {
+    visibility: hidden;
+}
+
+.contato .contentBx1,
+.contato .contentBx2 {
+    background: black;
+    padding: 100px;
+    width: 50%;
+    text-align: justify;
+}
+
+.heading {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
     margin-bottom: 10px;
-    background-color: rgb(63, 22, 175);
-    border-radius: 100%;
 }
 
-.certificados .centro h2 {
-    margin-bottom: 20px;
+.headingWhite {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
-.pontos {
-    display: block;
-    margin: 20px auto 20px;
-    height: 30px;
-    width: 30px;
-    background-color: rgb(63, 22, 175);
-    border-radius: 100%;
+.text {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.textWhite {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+
+    .certificados,
+    .projetos,
+    .habilidades,
+    .contato {
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+
+    .certificados .contentBx, .projetos .imgBx {
+        padding: 25px;
+        width: 100%;
+    }
+    
+    .certificados .imgBx, .projetos .imgBx {
+        width: 100%;
+    }
+
+    .projetos {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .projetos .contentBx {
+        padding: 25px;
+        width: 100%;
+    }
+
+    .habilidades .contentBx1 {
+        padding: 25px 25px 0 25px;
+        width: 100%;
+    }
+
+    .habilidades .contentBx2 {
+        padding: 0 25px 25px 25px;
+        width: 100%;
+    }
+
+    .habilidades .contentBx2 .heading {
+        display: none;
+    }
+
+    .contato .contentBx1,
+    .contato .contentBx2 {
+        padding: 25px;
+        width: 100%;
+    }
+
+    .contato .contentBx1 {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .contato .contentBx2 {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .contato .contentBx2 .heading {
+        display: none;
+    }
+
+    .banner header {
+        padding: 10px 25px;
+    }
+
+    .banner .content {
+        padding: 25px
+    }
+
 }
