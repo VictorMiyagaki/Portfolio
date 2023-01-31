@@ -33,9 +33,10 @@ a:hover {
 }
 
 .redes img {
-    max-height: 46px;
+    max-height: 35px;
     margin-left: 10px;
     transition: 0.5s;
+    margin-top: 5.5px;
 }
 
 .redes img:hover {
@@ -108,13 +109,13 @@ a:hover {
     padding: 40px 100px;
     padding-top: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    z-index: 10000;
 }
 
 .banner header img {
     max-height: 35px;
+    margin-right: 10px;
 }
 
 .banner header .logo_Banner {
@@ -123,25 +124,6 @@ a:hover {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
-}
-
-.banner header .together {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner header .together img {
-    margin-right: 35px;
-}
-
-.banner header .toggle {
-    margin: 10px;
-    position: relative;
-    width: 36px;
-    height: 27px;
-    background-size: cover;
-    cursor: pointer;
 }
 
 .certificados,
@@ -165,15 +147,21 @@ a:hover {
     width: 50%;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.certificados .imgBx a img,
-.projetos .imgBx a img {
-    width: 99%;
+.certificados .imgBx a,
+.projetos .imgBx a {
+    display: flex;
+    align-items: center;
+}
+
+.certificados .imgBx img,
+.projetos .imgBx img {
+    max-width: 99%;
     border: 1px solid grey;
     border-radius: 5px;
+    margin: 2px;
 }
 
 .projetos .contentBx {
@@ -256,13 +244,8 @@ a:hover {
 
 @media screen and (max-width: 767px) {
 
-    .banner header .logo_Banner {
-        font-size: 21px;
-    }
-
-    .banner header .toggle {
-        width: 24px;
-        height: 18px;
+    * {
+        flex-wrap: wrap;
     }
 
     .certificados,
@@ -283,6 +266,11 @@ a:hover {
     .certificados .imgBx,
     .projetos .imgBx {
         width: 100%;
+    }
+
+    .certificados .imgBx img,
+    .projetos .imgBx img {
+        max-width: 100%;
     }
 
     .projetos {
@@ -332,6 +320,7 @@ a:hover {
     .banner header {
         padding: 10px 25px;
         padding-top: 40px;
+        justify-content: space-between;
     }
 
     .banner .content {
@@ -341,5 +330,10 @@ a:hover {
     .button {
         font-size: 10px;
     }
+
+    .redes img {
+        max-height: 30px;
+    }
+    
 
 }
