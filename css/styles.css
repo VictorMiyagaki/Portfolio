@@ -265,10 +265,6 @@ a:hover {
         height: 18px;
     }
 
-    .redes {
-        justify-content: space-between;
-    }
-
     .certificados,
     .projetos,
     .habilidades,
@@ -279,7 +275,7 @@ a:hover {
     }
 
     .certificados .contentBx,
-    .projetos .imgBx {
+    .projetos .contentBx {
         padding: 25px;
         width: 100%;
     }
