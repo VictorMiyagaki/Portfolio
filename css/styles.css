@@ -109,7 +109,6 @@ a:hover {
     padding: 40px 100px;
     padding-top: 60px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
 }
 
