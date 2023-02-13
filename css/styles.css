@@ -30,6 +30,7 @@ a {
 a:hover {
     color: rgb(104, 77, 224);
     transition: 0.5s;
+    text-decoration: none;
 }
 
 .redes {
