@@ -81,6 +81,14 @@ a:hover {
     align-items: center;
 }
 
+.logo_Date a {
+    transition: 0.5s;
+}
+
+.logo_Date a:hover {
+    opacity: 0.5;
+}
+
 .banner {
     position: relative;
     width: 100%;
