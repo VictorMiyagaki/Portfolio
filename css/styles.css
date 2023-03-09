@@ -278,7 +278,7 @@ a:hover {
     justify-content: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1020px) {
 
     * {
         flex-wrap: wrap;
