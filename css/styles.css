@@ -10,6 +10,11 @@ p, img {
     padding: 0;
 }
 
+h5 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
 .button {
     position: absolute;
     color: grey;
@@ -218,14 +223,18 @@ a:hover {
 }
 
 .habilidades .contentBx1,
-.habilidades .contentBx2 {
+.habilidades .contentBx2,
+.habilidades .contentBx3,
+.habilidades .contentBx4 {
     background: white;
     padding: 100px;
-    width: 50%;
+    width: 25%;
     text-align: justify;
 }
 
-.habilidades .contentBx2 .heading {
+.habilidades .contentBx2 .heading,
+.habilidades .contentBx3 .heading,
+.habilidades .contentBx4 .heading {
     visibility: hidden;
 }
 
@@ -332,12 +341,20 @@ a:hover {
         width: 100%;
     }
 
-    .habilidades .contentBx2 {
+    .habilidades .contentBx2,
+    .habilidades .contentBx3 {
+        padding: 0 25px;
+        width: 100%;
+    }
+
+    .habilidades .contentBx4 {
         padding: 0 25px 25px 25px;
         width: 100%;
     }
 
-    .habilidades .contentBx2 .heading {
+    .habilidades .contentBx2 .heading,
+    .habilidades .contentBx3 .heading,
+    .habilidades .contentBx4 .heading {
         display: none;
     }
 
